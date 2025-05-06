@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  
+  <object class="GtkWindow" id="neue_linie_popup">
+    <property name="title">Neue Produktionslinie</property>
+    <property name="default-width">300</property>
+    <property name="default-height">100</property>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <property name="spacing">10</property>
+        <property name="margin-start">10</property>
+        <property name="margin-end">10</property>
+        <property name="margin-top">10</property>
+        <property name="margin-bottom">10</property>
+
+        <child>
+          <object class="GtkEntry" id="entry_name">
+            <property name="placeholder-text">Name der Produktionslinie</property>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkButton" id="btn_speichern">
+            <property name="label">Speichern</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
+
