@@ -1,0 +1,21 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "console": "integratedTerminal",
+            "env": {
+                "PKG_CONFIG_PATH": "${os:macos:/opt/homebrew/lib/pkgconfig:/opt/homebrew/share/pkgconfig}",
+                "GI_TYPELIB_PATH": "${os:macos:/opt/homebrew/lib/girepository-1.0}",
+                "DYLD_LIBRARY_PATH": "${os:macos:/opt/homebrew/lib:${env:DYLD_LIBRARY_PATH}}",
+                "GTK_THEME": "Adwaita:dark"
+            }
+        }
+    ]
+}
