@@ -1,4 +1,4 @@
-# 🛠️ GTK 4 + PyGObject Installation auf macOS
+# MacOS Installation
 
 Diese Anleitung hilft dir, ein Python-Projekt mit **GTK 4** und **PyGObject** unter macOS zum Laufen zu bringen.
 
@@ -74,11 +74,14 @@ Wenn du `4` siehst → alles funktioniert ✅
 ls /opt/homebrew/lib/girepository-1.0/Gtk-4.0.typelib
 ```
 
-## 🧹 Cleanup (optional)
-
-Wenn du versehentlich GTK 3 installiert hast:
+# Linux installation
 
 ```bash
-brew uninstall gtk+3
+curl -L https://nixos.org/nix/install | sh
+```
+
+Im Repositoryverzeichnis:
+```bash
+nix-shell
 ```
 
