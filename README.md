@@ -87,6 +87,8 @@ nix-shell
 
 # Windows Installation 
 
+### Anmerkung: Der Pfad kann nach Betriebssystemen variieren, dementsprechend müssen Befehle, sowie die launch.json angepasst werden
+
 ## 1. MSYS2 installieren
 
 - Lade den MSYS2-Installer von der offiziellen Website herunter: [https://www.msys2.org/](https://www.msys2.org/)
