@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Open nix-shell",
+      "type": "shell",
+      "command": "nix-shell",
+      "args": [
+        "--keep-going",
+        "--command", "python3 -m debugpy --listen 127.0.0.1:49152 --wait-for-client ${workspaceFolder}/main.py"
+      ],
+      "isBackground": true,
+      "presentation": {
+        "panel": "shared", 
+        "showReuseMessage": false,
+        "clear": false
+      },
+      "problemMatcher": ["$python"], 
+    }
+  ]
+}

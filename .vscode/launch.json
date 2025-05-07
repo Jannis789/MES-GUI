@@ -1,7 +1,6 @@
 {
   "version": "0.2.0",
   "configurations": [
-
     {
       "name": "MSYS2 Python (Windows)",
       "type": "debugpy",
@@ -11,17 +10,17 @@
       "console": "integratedTerminal",
       "justMyCode": false,
       "subProcess": false,
-      "env": {
-        "GTK_THEME": "Adwaita:dark"
-      }
     },
     {
-      "name": "Python: main.py",
+      "name": "Run with nix-shell",
       "type": "debugpy",
-      "request": "launch",
-      "program": "${workspaceFolder}/main.py",
-      "console": "integratedTerminal",
-      "justMyCode": true,
+      "request": "attach",
+      "connect": {
+        "host": "127.0.0.1",
+        "port": 49152
+      },
+      "justMyCode": false,
+      "preLaunchTask": "Open nix-shell"
     }
   ]
 }
