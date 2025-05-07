@@ -1,31 +1,27 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "MSYS2 Python (Windows)",
-            "type": "debugpy",
-            "request": "launch",
-            "python": "C:\\msys64\\mingw64\\bin\\python.exe",
-            "program": "${workspaceFolder}/main.py",
-            "console": "integratedTerminal",
-            "justMyCode": false,
-            "subProcess": false,
-            "env": {
-                "GTK_THEME": "Adwaita:dark",
-            }
-        },
-        {
-            "name": "Python Debugger: Current File (macOS)",
-            "type": "debugpy",
-            "request": "launch",
-            "program": "${workspaceFolder}/main.py",
-            "console": "integratedTerminal",
-            "env": {
-                "PKG_CONFIG_PATH": "${os:macos:/opt/homebrew/lib/pkgconfig:/opt/homebrew/share/pkgconfig}",
-                "GI_TYPELIB_PATH": "${os:macos:/opt/homebrew/lib/girepository-1.0}",
-                "DYLD_LIBRARY_PATH": "${os:macos:/opt/homebrew/lib:${env:DYLD_LIBRARY_PATH}}",
-                "GTK_THEME": "Adwaita:dark"
-            }
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+
+    {
+      "name": "MSYS2 Python (Windows)",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "C:\\msys64\\mingw64\\bin\\python.exe",
+      "program": "${workspaceFolder}/main.py",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "subProcess": false,
+      "env": {
+        "GTK_THEME": "Adwaita:dark"
+      }
+    },
+    {
+      "name": "Python: main.py",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+    }
+  ]
 }
