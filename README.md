@@ -1,41 +1,16 @@
 # MacOS Installation
-
-### 1. Homebrew installieren (falls noch nicht vorhanden)
-
+### Installiere nix-shell
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+curl -L https://nixos.org/nix/install | sh
 ```
 
-### 2. GTK 4 und PyGObject installieren
-
+### Öffne vscode im Terminal wiefolgt, oder starte es manuell in der nix-shell mit python main.py
 ```bash
-brew install gtk4 pygobject3
+nix-shell --run "open -n -a 'Visual Studio Code.app'"
 ```
-
-### 4. Virtuelle Umgebung einrichten (optional, aber empfohlen)
-
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-> Achte darauf, dass `python3` auf die Homebrew-Version zeigt:
-
-```bash
-which python3
-# Sollte z. B. /opt/homebrew/bin/python3 sein
-```
-
-### 5. Installation testen
-
-```bash
-python3 -c "from gi.repository import Gtk; print(Gtk.MAJOR_VERSION)"
-```
-
-Wenn du `4` siehst → alles funktioniert ✅
-
 # Linux installation
 
+### Installiere nix-shell
 ```bash
 curl -L https://nixos.org/nix/install | sh
 ```
