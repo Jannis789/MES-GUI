@@ -8,7 +8,7 @@
 ```bash
 curl -L https://nixos.org/nix/install | sh
 ```
-- Launch via Visual Studio Code Runner `Nix-Shell Python (Linux or MacOS)` or via nix-shell with the command python main.py
+- Launch via Visual Studio Code Runner: `Nix-Shell Python (Linux or MacOS)` oder via nix-shell mit dem Befehl `python main.py`
 
 # Windows Installation 
 
