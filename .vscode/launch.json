@@ -12,15 +12,12 @@
       "subProcess": false,
     },
     {
-      "name": "Run with nix-shell",
+      "name": "Nix-Shell Python (Linux or MacOS)",
       "type": "debugpy",
-      "request": "attach",
-      "connect": {
-        "host": "127.0.0.1",
-        "port": 49152
-      },
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "console": "integratedTerminal",
       "justMyCode": false,
-      "preLaunchTask": "Open nix-shell"
     }
   ]
 }

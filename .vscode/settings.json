@@ -1,0 +1,14 @@
+{
+    "terminal.integrated.profiles.osx": {
+        "nix-shell": {
+            "path": "nix-shell"
+        }
+    },
+    "terminal.integrated.defaultProfile.osx": "nix-shell",
+    "terminal.integrated.profiles.linux": {
+        "nix-shell": {
+            "path": "nix-shell"
+        }
+    },
+    "terminal.integrated.defaultProfile.linux": "nix-shell"
+}
