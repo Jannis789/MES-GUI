@@ -3,7 +3,6 @@
 
 pkgs.mkShell {
   buildInputs = [
-    (pkgs.python3.withPackages (ps: with ps; [ debugpy ])) # Ensure debugpy is included
     pkgs.python3
     pkgs.gtk4
     pkgs.glib
@@ -12,7 +11,7 @@ pkgs.mkShell {
     pkgs.pango
     pkgs.cairo
     pkgs.harfbuzz
-    pkgs.python3Packages.pygobject3  # This should be the correct Python package for pygobject3
+    pkgs.python3Packages.pygobject3
   ];
 
   # Ensure that the GI_TYPELIB_PATH and PYTHONPATH are set correctly
