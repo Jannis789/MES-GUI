@@ -26,7 +26,7 @@ curl -L https://nixos.org/nix/install | sh
 - Führe im MSYS2-Terminal folgenden Befehl aus, um die benötigten Pakete zu installieren:
 
   ```bash
-  pacman -Syuu mingw-w64-x86_64-python mingw-w64-x86_64-python-pip mingw-w64-x86_64-gtk4 mingw-w64-x86_64-python-gobject
+  pacman -Syuu mingw-w64-x86_64-python mingw-w64-x86_64-python-pip mingw-w64-x86_64-gtk4 mingw-w64-x86_64-python-gobject mingw-w64-x86_64-libadwaita
   ```
 
 ## 3. Python-Interpreter in VS Code einrichten
